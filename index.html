@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portofolio</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mediaquerry.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <nav id = "desktop-nav">
+            <div class="logo"> Khairunas R W</div>
+            <div>
+                <ul class="nav-link">
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Experience">Experience</a></li>
+                    <li><a href="#Education">Education</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                  </ul>
+            </div>
+        </nav>
+        <!-- digunakan javascript untuk penggunakan navigasi mobile dengan menggunakan onclick="toggleMenu()" yang berfungsi ketika tombol ditekan
+        akan menampilkan menu navigasi dan ketika ditekan menu navigasinya akan kembali menutup dan menuju target yang diiinginkan -->
+        <nav id = "mobile-nav">
+            <div class="logo">Khairunas R W</div>
+            <div class="mobile-menu">
+            <div class="mobile-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#About" onclick="toggleMenu()">About</a></li>
+                <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#Education" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+      <section id="profile">
+        <div class="section__pic-container">
+             <img src="asset/IMG_3648-modified.png" alt="Anas foto">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Khairunas </h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2"onclick="window.open('./asset/Khairunas_CV.pdf')">
+                      Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                        Contact Info
+                </button>
+                <div id="socials-container">
+                    <img
+                        src="./asset/linkedin.png"
+                        alt="My LinkedIn profile"
+                        class="icon"
+                        onclick="location.href='https://www.linkedin.com/in/khairunas-rhamadhani-wiasanto-2186481b9/'"
+                    />
+                    <img
+                        src="./asset/github.png"
+                        alt="My Github profile"
+                        class="icon"
+                        onclick="location.href='https://github.com/khairunas001'"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id = "About">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./asset/IMG_6154.JPG"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+          </div>
+          <div class="text-container">
+            <p>
+              Hello my name is Khairunas Rhamadhani Wiasanto you can call Anas, born in Yogyakarta on December 1, 2001. Interested in Information Technology and 
+              Have a leadership spirit, creative and innovative. Experienced in various internal campus organizations and can have 
+              Experience in the creative industries in video editing, graphic design, and technology.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+      <section id="Experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming Languange</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./asset/html.png "
+                  alt="Html icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./asset/css.png"
+                  alt="css icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./asset/JavaScript-logo.png"
+                  alt="js icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./asset/git.png"
+                  alt="git icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./asset/python.png   "
+                  alt="python icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Design</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./asset/1667px-Figma-logo.svg.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                  <p>Intermediete</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./asset/Adobe_Illustrator_CC_icon.svg.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe Illustrator</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./asset/Adobe_After_Effects_CC_icon.svg.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe After Effect</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Education">
+        <p class="section__text__p1">My Studied Journey</p>
+      <h1 class="title">Academic</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="article-container">
+              <article>
+                <img
+                  src="./asset/671-SMA_MUHAMMADIYAH_1_YOGYAKARTA.png"
+                  alt="Html icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SMA Muhammadiyah 1 Yogyakarta</h3>
+                  <p>Graduated 2020</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./asset/Logo UGM.png"
+                  alt="Html icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>University of Gadjah Mada</h3>
+                  <p>Electronic and Instrumentation <br>
+                    2020 - Now
+                </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
+    <aside id = "Contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./asset/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:khairunasrw@gmail.com">khairunasrw@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./asset/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/khairunas-rhamadhani-wiasanto-2186481b9/">LinkedIn</a></p>
+          </div>
+        </div>
+    </aside>
+    </main>
+    <footer>
+        <p>Copyright &#169; 2023 Khairunas. All Rights Reserved.</p>
+      </footer>
+</body>
+</html>
